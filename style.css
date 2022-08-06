@@ -1,0 +1,300 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	/*letter-spacing: 1px*/
+	font-family: sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+	background: #091921;
+}
+
+.sahifa_1{
+	min-width: 100%;
+	/* min-height-height: 100vh; */
+	/*border:1px solid red;*/
+	background: #091921;
+	color: #fff;
+
+}
+.sahifa_1 header{
+	padding-top: 20px;
+	min-width: 100%;
+	min-height: 8vh;
+	display: flex;
+	justify-content: space-around;
+}
+.sahifa_1 header .logo{
+	min-width: 8%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sahifa_1 header .logo span{
+	font-size: 29px;
+	font-weight: bold;
+}
+.sahifa_1 header .link{
+	min-width: 50%;
+	min-height: 100%;
+	/*border:1px solid red;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+
+}
+.sahifa_1 header .link a{
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	transition: .5s transform;
+
+}
+.sahifa_1 header .link a::before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	width: 100%;
+	border: 1px solid #fff;
+	transform: scale(0);
+	transform-origin: right;
+	transition: .5s transform;
+
+
+
+}
+.sahifa_1 header .link a:hover::before{
+	transform: scale(1);
+	transform-origin: left;
+	transition: .5s transform;
+}
+.sahifa_1 .backend{
+	min-width: 15%;
+	min-height: 5vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.sahifa_1 .backend a{
+	color: #fff;
+	font-size: 20px;
+
+}
+.sahifa_1 .backend button a{
+	color: #fff
+}
+.sahifa_1 .backend button{
+	width: 130px;
+	padding: 10px 0px;
+	border-radius: 10px;
+	background-color: rgb(228,127,39);
+	
+	color: #fff;
+	letter-spacing: 2px;
+	border: none;
+	transition: 0.5s ease-in-out
+}.sahifa_1 .backend button:hover{
+	letter-spacing: 5px
+}
+
+.sahifa_1 main{
+	position: relative;
+	top: 50px;
+	max-width: 100%;
+	height: 92vh; 	
+	/*border: 1px solid red;*/
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.sahifa_1 main .left{
+	position: relative;
+	left: 60px;
+	max-width: 70%;
+	height: 450px;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/*border: 1px solid red;*/
+}
+ .sahifa_1 main .left h1{
+	position: relative;
+	font-weight: bold;
+	font-size: 46px;
+}.sahifa_1 main .left p{
+	display: inline-block;
+	/* line-height: 5px; */
+	font-size: 22px;
+}
+main .left form{
+	padding: 5px;
+	border-radius: 3px;
+	width: 90%;
+	background: #0e2b3a;
+	display: flex;
+	justify-content: space-around;
+}
+main .left form .search{
+	
+	padding: 5px 40px;
+	background-color: rgb(228,127,39);
+	border: none;
+	border-radius: 5px;
+
+	letter-spacing:3px;
+	cursor: pointer;
+
+}
+main .left form input{
+	color: #fff;
+	font-size: 17px;
+	outline: none;
+	border: none;
+	padding: 10px 20px;
+	background: #0e2b3a;
+
+}
+main .right{
+	min-width: 50%;
+}
+
+
+
+.sahifa_2{
+	max-width: 1250px;
+	height: 150vh;
+	/* border: 1px solid red; */
+	margin: 0 auto;
+	background: #091921;
+	color: rgba(255,255,255,0.8);
+}
+.sahifa_2 main{
+	margin: 20px auto;
+	/*position: relative;*/
+	/*top: 50px;/*/
+	width: 1000px;
+	height: 700px; 	
+	/*border: 1px solid red;*/
+	display: grid;
+	grid-template-columns:repeat(3,300px);
+	grid-template-rows:300px;
+	row-gap:100px;
+	column-gap: 50px;
+
+	background: #091921;
+}
+
+.sahifa_2 header{
+	height: 15vh;
+	/* border: 1px solid red; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}.sahifa_2 header hr{
+	width: 8%;
+	height: 2px;
+	border: none;
+	border-radius: 3px;
+	background: #FF6E30;
+}
+.sahifa_2 .card{
+	background: #091921;
+	color: rgba(255,255,255,0.5);
+	transition: 0.3s ease-in-out;
+	padding-top: 10px;
+	/*width: 30%;*/
+	/*height: 200px;*/
+	/* border: 1px solid red; */
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}.sahifa_2 .card:hover{
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+	/*background-color: #FF6E30;*/
+	background: rgba(40,48,54,1);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	box-shadow:0 0  3px 3px #031f2f;
+
+}
+.sahifa_2 .card .img{
+	width: 200px;
+	display: flex;
+	align-content: flex-start;
+	/*border:1px solid red;*/
+	height: 50px;
+}
+.sahifa_2 .card .img p{
+	display: inline-block;
+	padding-bottom: 10px;
+
+
+}
+.sahifa_2 .card .img p span{
+	display: inline-block;
+	padding-top: 5px
+}
+.sahifa_2 .card .gap{
+	width: 80%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}.sahifa_2 .card .gap button{
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 19px;
+	letter-spacing: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	background-color: rgb(228,127,39);
+}.sahifa_2 .card .gap button a{
+	color: #fff;
+}
+#footer{
+	background-color: #083850;
+	color: #fff;
+	width: 100%;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer div{
+	/* border: 1px solid red; */
+	width: 50%;
+	height: 80px;
+	text-align: center;
+	font-size: 22px;
+}
+
+#footer div span{
+	display: inline-block;
+	padding: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 756px){
+	main{
+		grid-template-columns: auto;
+	}
+}
